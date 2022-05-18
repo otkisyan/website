@@ -77,7 +77,14 @@ table {
 	cursor: pointer;
 }
 
+.type{
+	
+	
+
+}
+
 .previousEntry{
+	
 	margin-top: 50px;
 	margin-left: 27px;
 	font-family: 'Inter';
@@ -89,7 +96,6 @@ table {
 
 	color: #272727;
 }
-
 
 .inputField{
 	border: 0;
