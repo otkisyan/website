@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel= "stylesheet" href="styles/calculate.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <title id = "webTitleElectric">Обчислення електроенергії</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/calculate.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <title id="webTitleElectric">Обчислення електроенергії</title>
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <a onclick = "history.back()" class = "back">
-        <img src = "images/arrow.svg" class = "arrow">
-        </a>
-        <p class = "title" id = "electricTitle">ЕЛЕКТРОЕНЕРГІЯ</p>
+  <div class="wrapper">
+    <a onclick="history.back()" class="back">
+      <img src="images/arrow.svg" class="arrow">
+    </a>
+    <p class="title" id="electricTitle">ЕЛЕКТРОЕНЕРГІЯ</p>
 
-        <form class = "inputValues" id = "mainform" onsubmit="return false">
+    <form class="inputValues" id="mainform" onsubmit="return false">
 
-        <p class = "previousEntry" id = "previousEntry">Попередні показання</p>
-        <input class="inputField" id = "previousValue" type="number" placeholder="0000" step="0.01" required>
-        
-        <p class = "newEntry" id = "newEntry">Нові показання</p>
-        <input class="inputField" id = "newValue" type="number" placeholder="0000" step="0.01" required>
+      <p class="previousEntry" id="previousEntry">Попередні показання</p>
+      <input class="inputField" id="previousValue" type="number" placeholder="0000" step="0.01" required>
 
-        <p class = "rate" id = "currentRate">Тариф</p>
-        <input class="inputField" id = "rate" type="number" placeholder="0000" step="0.01" required>
+      <p class="newEntry" id="newEntry">Нові показання</p>
+      <input class="inputField" id="newValue" type="number" placeholder="0000" step="0.01" required>
 
-        <p class = "sumText" id = "sumText">Сумма до сплати</p>
-        <input class="inputField" id = "sum" type="number" style = "width: 50%" step="0.01" disabled>
+      <p class="rate" id="currentRate">Тариф</p>
+      <input class="inputField" id="rate" type="number" placeholder="0000" step="0.01" required>
 
-        <input type = "submit" value = "ОБЧИСЛИТИ" class = "add" id = "sumButton" onclick="finalSum()"></input>
-            
-        </form>
+      <p class="sumText" id="sumText">Сумма до сплати</p>
+      <input class="inputField" id="sum" type="number" style="width: 50%" step="0.01" disabled>
 
-        
-    
+      <input type="submit" value="ОБЧИСЛИТИ" class="add" id="sumButton" onclick="finalSum()"></input>
 
-    </div>
+    </form>
 
-    <script src="scripts/calculate.js"></script>
-    <script src="scripts/translation/electricTranslation.js"></script>
+
+
+
+  </div>
+
+  <script src="scripts/calculate.js"></script>
+  <script src="scripts/translation/electricTranslation.js"></script>
 
 </body>
+
 </html>
