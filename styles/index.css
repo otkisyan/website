@@ -416,6 +416,7 @@ a{
 	.closeButton{
 		margin-top: -35px;
 	}
+	
 }
 
 @media (max-width: 390px) {
@@ -426,6 +427,9 @@ a{
 		
 	.closeButton{
 		margin-top: -35px;
+	}
+	.informationForUser{
+		margin-bottom: 90px;
 	}
 }
 
