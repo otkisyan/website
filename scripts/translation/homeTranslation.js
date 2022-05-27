@@ -2,21 +2,29 @@ function getLanguage(currentLang){
     localStorage.setItem('language', currentLang);
 }
 
-const currentLanguage = localStorage.getItem("language");
+const currentLanguage = localStorage.getItem('language');
 
 function reloadPage(lang)
 {
     window.location.hash = "#" + lang;
     window.location.reload(true);
+    
     //location.href = location.pathname (reload page if it has hash)
  }
 
  function checkLanguage(){
-     if(!window.location.hash){
-    window.location.hash = "#" + localStorage.getItem("language");
+
+         if(localStorage.getItem('language') === ''){
+             localStorage.setItem('language', 'ua');
+         }
+
+    if(!window.location.hash){ 
+    window.location.hash = "#" + localStorage.getItem('language');
     window.location.reload(true); 
+
      }
  }
+
  
  function redirect(filename){
     window.location.href = filename + window.location.hash;
