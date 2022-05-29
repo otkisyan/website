@@ -7,7 +7,6 @@ const currentLanguage = localStorage.getItem('language');
 
 function reloadPage(lang)
 {
-    window.location.hash = "#" + lang;
     //window.location.reload(true);
     window.location.href = window.location.pathname;
  }
@@ -23,7 +22,6 @@ function reloadPage(lang)
     //window.location.reload(true); 
    
      }
-     
      
  }
 
@@ -86,7 +84,7 @@ var language = {
     }
 };
 
-function changeLanguage(){
+function changeLanguages(){
 if(window.location.hash){
     if(window.location.hash === "#ru"){
         //Home page
