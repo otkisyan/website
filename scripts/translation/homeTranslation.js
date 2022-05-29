@@ -8,7 +8,8 @@ const currentLanguage = localStorage.getItem('language');
 function reloadPage(lang)
 {
     window.location.hash = "#" + lang;
-    window.location.reload(true);
+    //window.location.reload(true);
+    window.location.href = window.location.pathname;
  }
 
  function checkLanguage(){
@@ -19,9 +20,10 @@ function reloadPage(lang)
 
     if(!window.location.hash){ 
     window.location.hash = "#" + localStorage.getItem('language');
-    window.location.reload(true); 
+    //window.location.reload(true); 
    
      }
+     
      
  }
 
@@ -84,7 +86,7 @@ var language = {
     }
 };
 
-
+function changeLanguage(){
 if(window.location.hash){
     if(window.location.hash === "#ru"){
         //Home page
@@ -136,4 +138,5 @@ if(window.location.hash){
 
     }
 
+}
 }
