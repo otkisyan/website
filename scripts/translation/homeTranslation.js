@@ -9,7 +9,6 @@ function reloadPage(lang)
 {
     window.location.hash = "#" + lang;
     window.location.reload(true);
-    window.location.replace("index.html");
     
  }
 
@@ -22,6 +21,7 @@ function reloadPage(lang)
     if(!window.location.hash){ 
     window.location.hash = "#" + localStorage.getItem('language');
     window.location.reload(true); 
+    
     
      }
      
