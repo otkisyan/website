@@ -8,8 +8,8 @@ const currentLanguage = localStorage.getItem('language');
 function reloadPage(lang)
 {
     window.location.hash = "#" + lang;
-    window.location.reload(true);
-    
+    //window.location.reload(true);
+    window.location.href = location.pathname;
  }
 
  function checkLanguage(){
