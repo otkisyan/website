@@ -3,8 +3,6 @@ function getLanguage(currentLang){
     localStorage.setItem('language', currentLang);
 }
 
-const currentLanguage = localStorage.getItem('language');
-
 function reloadPage(lang)
 {
     //window.location.reload(true);
@@ -25,7 +23,6 @@ function reloadPage(lang)
      
  }
 
- 
  function redirect(filename){
     window.location.href = filename + window.location.hash;
  }
@@ -85,6 +82,7 @@ var language = {
 };
 
 function changeLanguages(){
+    
 if(window.location.hash){
     if(window.location.hash === "#ru"){
         //Home page
