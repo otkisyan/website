@@ -11,7 +11,7 @@ var language = {
         previousEntry: "Попередні показання",
         newEntry: "Нові показання",
         rate: "Тариф",
-        sumText: "Сумма до сплати",
+        sumText: "Сума до сплати",
         sumButton: "ОБЧИСЛИТИ"
 
     },
