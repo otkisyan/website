@@ -32,6 +32,7 @@ var language = {
     "ua": {
         //Home page
         title: "Калькулятор комунальних послуг",
+        mainPageTitle: "Калькулятор комунальних послуг",
         subtitle: "Натисніть на кнопку щоб пійти далі",
         water: "Вода",
         gas : "Газ",
@@ -47,7 +48,8 @@ var language = {
 
     "ru": {
         //Home page
-        title: "Калькулятор коммунальних услуг",
+        title: "Калькулятор коммунальных услуг",
+        mainPageTitle: "Калькулятор коммунальных услуг",
         subtitle: "Нажмите на кнопку чтобы перейти дальше",
         water: "Вода",
         gas : "Газ",
@@ -64,6 +66,7 @@ var language = {
     "en": {
         //Home page
         title: "Calculator of communal services",
+        mainPageTitle: "Calculator of communal services",
         subtitle: "Click on the button to go further",
         water: "Water",
         gas : "Gas",
@@ -87,6 +90,7 @@ if(window.location.hash){
     if(window.location.hash === "#ru"){
         //Home page
         title.textContent = language.ru.title;
+        mainPageTitle.textContent = language.ru.mainPageTitle;
         subtitle.textContent = language.ru.subtitle;
         water.textContent = language.ru.water;
         gas.textContent = language.ru.gas;
@@ -103,6 +107,7 @@ if(window.location.hash){
     if(window.location.hash === "#ua"){
         //Home page
         title.textContent = language.ua.title;
+        mainPageTitle.textContent = language.ua.mainPageTitle;
         subtitle.textContent = language.ua.subtitle;
         water.textContent = language.ua.water;
         gas.textContent = language.ua.gas;
@@ -120,6 +125,7 @@ if(window.location.hash){
     if(window.location.hash === "#en"){
         //Home page
         title.textContent = language.en.title;
+        mainPageTitle.textContent = language.en.mainPageTitle;
         subtitle.textContent = language.en.subtitle;
         water.textContent = language.en.water;
         gas.textContent = language.en.gas;
@@ -131,7 +137,7 @@ if(window.location.hash){
         //Info popup
         contentTitle.textContent = language.en.titleContent;
         textContent.textContent = language.en.textContent;
-
+        
     }
 
 }
