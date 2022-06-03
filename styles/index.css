@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrapper{
+  margin-right: auto; 
+  margin-left: auto; 
+
+  max-width: 960px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+
+
+}
+
+.avatar{
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 179px;
+  height: 204px;
+}
+
+.title{
+	margin-top: 20px;
+	text-align: center;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.subtitle{
+	margin-top: 10px;
+	font-family: Inter;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: rgba(0, 0, 0, 0.37);
+}
+
+.buttons{
+	margin-top: 30px;
+}
+
+button{
+
+	width: 180px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #197BDD;
+	border-radius: 50px;
+	margin-top: 10px;
+	border: none;
+    cursor: pointer;
+    outline: none;
+	transition: transform 250ms, background-color 0.5s;
+
+	color: white;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	
+}
+
+
+button:hover{
+	background-color: #F3CD0E;
+	transform: translateY(-2px);
+
+}
+
+
+.changeLanguage{
+	
+	display: block;
+	margin-top: 80px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.37);
+
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.languages{
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	justify-content: center;
+}
+
+
+.language{
+	display: inline;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+	
+}
+
+.language:hover{
+	
+	transform: scale(1.2);
+
+}
+
+.informationForUser{
+	
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.37);
+	cursor: pointer;
+
+}
+
+
+.background{
+	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0px;
+	left: 0px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.content{
+
+	width: 600px;
+	height: 450px;
+	background-color: white;
+	margin: 10px;
+	z-index: 1;
+	border-radius: 50px;
+	text-align: center;
+
+}
+
+.background.active{
+	display: flex;
+	animation: background-open 0.8s;
+}
+
+.content.active{
+	animation: popup-open 0.5s;
+}
+
+@keyframes background-open {
+	from {background-color: rgba(0, 0, 0, 0.0);}
+	
+	to {background-color: rgba(0, 0, 0, 0.7);}
+  }
+
+@keyframes popup-open {
+	0%{
+	  transform: scale(0);
+	}
+	
+	100%{
+	  transform: scale(1);
+	}
+  }
+
+
+
+.infoImage{
+	display: block;
+	margin-top: 20px;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 40px;
+	height: 40px;
+	
+}
+
+.closeButton{
+	display: block;
+	margin-top: -20px;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+}
+
+.contentTitle{
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 15px;
+	text-align: center;
+}
+
+.textContent{
+	margin: 40px;
+	margin-top: 15px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+
+
+
+
+@media (max-width: 590px) {
+
+	.textContent{
+		font-size: 17px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
+@media (max-width: 531px) {
+
+	.textContent{
+		font-size: 16.5px;
+	}
+		
+	.closeButton{
+		margin-top: -15px;
+	}
+}
+@media (max-width: 495px) {
+
+	.textContent{
+		font-size: 16px;
+	}
+		
+	.closeButton{
+		margin-top: -15px;
+	}
+}
+
+@media (max-width: 479px) {
+
+	.textContent{
+		font-size: 16px;
+	}
+		
+	.closeButton{
+		margin-top: -35px;
+	}
+}
+
+
+
+@media (max-width: 469px) {
+
+	.textContent{
+		font-size: 15.5px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
+
+
+@media (max-width: 457px) {
+
+	.textContent{
+		font-size: 15px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
+
+
+@media (max-width: 442px) {
+
+	.textContent{
+		font-size: 14.8px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
+
+
+@media (max-width: 437px) {
+
+	.textContent{
+		font-size: 14.7px;
+	}
+		
+	.closeButton{
+		margin-top: -30px;
+	}
+}
+
+
+@media (max-width: 415px) {
+
+	.textContent{
+		font-size: 14.4px;
+	}
+		
+	.closeButton{
+		margin-top: -28px;
+	}
+}
+
+@media (max-width: 406px) {
+
+	.textContent{
+		font-size: 14.2px;
+	}
+		
+	.closeButton{
+		margin-top: -30px;
+	}
+}
+
+@media (max-width: 393px) {
+
+	.textContent{
+		font-size: 13.8px;
+	}
+		
+	.closeButton{
+		margin-top: -35px;
+	}
+	
+}
+
+@media (max-width: 390px) {
+
+	.textContent{
+		font-size: 13.6px;
+	}
+		
+	.closeButton{
+		margin-top: -35px;
+	}
+	
+}
+
+@media (max-width: 375px) {
+
+	.textContent{
+		font-size: 13.5px;
+	}
+		
+	.closeButton{
+		margin-top: -27px;
+	}
+}
+
+@media (max-width: 356px) {
+
+	.textContent{
+		font-size: 13px;
+	}
+		
+	.closeButton{
+		margin-top: -27px;
+	}
+}
+
+@media (max-width: 346px) {
+
+	.textContent{
+		font-size: 12.8px;
+	}
+		
+	.closeButton{
+		margin-top: -27px;
+	}
+}
+
+
+
+@media (max-width: 328px) {
+
+	.textContent{
+		font-size: 12px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
+
+@media (max-width: 315px) {
+
+	.textContent{
+		font-size: 11.7px;
+	}
+		
+	.closeButton{
+		margin-top: -27px;
+	}
+}
+
+
+@media (max-width: 302px) {
+
+	.textContent{
+		font-size: 11.5px;
+	}
+		
+	.closeButton{
+		margin-top: -25px;
+	}
+}
+
+
+@media (max-width: 297px) {
+
+	.textContent{
+		font-size: 11px;
+	}
+		
+	.closeButton{
+		margin-top: -15px;
+	}
+}
+
+
+@media (max-width: 285px) {
+
+	.textContent{
+		font-size: 10.8px;
+	}
+		
+	.closeButton{
+		margin-top: -20px;
+	}
+}
