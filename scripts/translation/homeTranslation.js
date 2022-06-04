@@ -1,3 +1,4 @@
+
 function getLanguage(currentLang){
 
     localStorage.setItem('language', currentLang);
@@ -11,7 +12,7 @@ function reloadPage(lang)
 
  function checkLanguage(){
 
-    if(localStorage.getItem('language') === ''){
+    if(localStorage.getItem('language') === '' || localStorage.getItem('language') === null){
         localStorage.setItem('language', 'ua');
     }
 

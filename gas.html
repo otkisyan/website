@@ -14,10 +14,10 @@
   <title id="webTitleGas">Обчислення газу</title>
 </head>
 
-<body>
+<body onload="checkLanguage(); changeLanguages(); createEntries();">
 
   <div class="wrapper">
-    <a onclick="history.back()" class="back">
+    <a href="index.html" class="back">
       <img src="images/arrow.svg" class="arrow">
     </a>
     <p class="title" id="gasTitle">ГАЗ</p>
@@ -36,7 +36,7 @@
       <p class="sumText" id="sumText">Сума до сплати</p>
       <input class="inputField" id="sum" type="number" style="width: 50%" step="0.01" disabled>
 
-      <input type="submit" value="ОБЧИСЛИТИ" class="add" id="sumButton" onclick="finalSum()"></input>
+      <input type="submit" value="ОБЧИСЛИТИ" class="add" id="sumButton" onclick="finalSum(); saveEntries()"></input>
 
     </form>
 
@@ -47,6 +47,7 @@
 
   <script src="scripts/calculate.js"></script>
   <script src="scripts/translation/gasTranslation.js"></script>
+  <script src = "scripts/entries.js"></script>
 
 </body>
 

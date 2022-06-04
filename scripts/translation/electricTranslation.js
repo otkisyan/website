@@ -1,5 +1,19 @@
 
 
+ function checkLanguage(){
+
+    if(localStorage.getItem('language') === ''){
+        localStorage.setItem('language', 'ua');
+    }
+
+    if(!window.location.hash){ 
+    window.location.hash = "#" + localStorage.getItem('language');
+    //window.location.reload(true); 
+   
+     }
+     
+ }
+
 var language = {
     "ua": {
         
@@ -46,7 +60,7 @@ var language = {
     }
 };
 
-
+function changeLanguages(){
 if(window.location.hash){
 
     if(window.location.hash === "#ua"){
@@ -95,4 +109,5 @@ if(window.location.hash){
 
     }
 
+}
 }
