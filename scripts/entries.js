@@ -1,8 +1,8 @@
 
-function createEntries(){
+function createEntries(type){
 
-    if(localStorage.getItem('arrayCreated') === '' || localStorage.getItem('arrayCreated') === null){
-        localStorage.setItem('arrayCreated', true);
+    if(localStorage.getItem('arrayCreated' + type) === '' || localStorage.getItem('arrayCreated' + type) === null){
+        localStorage.setItem('arrayCreated' + type, true);
 
         let Entries = [
             {
@@ -14,20 +14,20 @@ function createEntries(){
         },
         ]
 
-        localStorage.setItem("Entries", JSON.stringify(Entries));
+        localStorage.setItem('Entries' + type, JSON.stringify(Entries));
         
     }
 
-    if(localStorage.getItem('EntriesSize') === '' || localStorage.getItem('EntriesSize') === null){
-        localStorage.setItem('EntriesSize', 0);
+    if(localStorage.getItem('EntriesSize' + type) === '' || localStorage.getItem('EntriesSize' + type) === null){
+        localStorage.setItem('EntriesSize' + type, 0);
     }
 
 }
 
-function saveEntries(){
+function saveEntries(type){
 
-    let i = localStorage.getItem('EntriesSize');
-    let Entries = JSON.parse(localStorage.getItem('Entries'));
+    let i = localStorage.getItem('EntriesSize' + type);
+    let Entries = JSON.parse(localStorage.getItem('Entries' + type));
 
     //current date
     today = new Date();
@@ -51,13 +51,19 @@ function saveEntries(){
         sum: document.getElementById("sum").valueAsNumber,
     }
 
-    localStorage.setItem("Entries", JSON.stringify(Entries));
+    localStorage.setItem('Entries' + type, JSON.stringify(Entries));
     i++;
-    localStorage.setItem("EntriesSize", i);
+    localStorage.setItem("EntriesSize" + type, i);
     
 }
 
 }
+
+function redirect(type){
+    window.location.href = 'entries.html' + '#' + type;
+ }
+
+
 
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/entries.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Попередні показання</title>
+</head>
+
+<body onload = "getType(); buildTable()">
+    <div class = "wrapper">
+    <div class = "previousEntries">
+    <table class = "entriesTable">
+
+        <tr class = "tableValues">
+            <td class = "value">Дата</td>
+            <td class = "value">Попередні показання</td>
+            <td class = "value">Нові показання</td>
+            <td class = "value">Тариф</td>
+            <td class = "value">Сума до сплати</td>
+        </tr>
+
+        <tbody class = "tableData" id = "tableData">
+
+        </tbody>
+
+    </table>
+    </div>
+    </div>
+
+
+    <script src = "scripts/entries.js"></script>
+    <script src = "scripts/table.js"></script>
+</body>
+</html>

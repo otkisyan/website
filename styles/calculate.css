@@ -252,6 +252,22 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.previousEntries{
+
+	display: block;
+	margin-top: 100px;
+
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.37);
+	cursor: pointer;
+}
 
 
 @media (max-width: 365px) {

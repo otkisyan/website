@@ -14,7 +14,7 @@
   <title id="webTitleGas">Обчислення газу</title>
 </head>
 
-<body onload="checkLanguage(); changeLanguages(); createEntries();">
+<body onload="checkLanguage(); changeLanguages(); createEntries('Gas');">
 
   <div class="wrapper">
     <a href="index.html" class="back">
@@ -36,9 +36,11 @@
       <p class="sumText" id="sumText">Сума до сплати</p>
       <input class="inputField" id="sum" type="number" style="width: 50%" step="0.01" disabled>
 
-      <input type="submit" value="ОБЧИСЛИТИ" class="add" id="sumButton" onclick="finalSum(); saveEntries()"></input>
+      <input type="submit" value="ОБЧИСЛИТИ" class="add" id="sumButton" onclick="finalSum(); saveEntries('Gas')"></input>
 
     </form>
+
+    <a class = "previousEntries" onclick = "redirect('gas')">Історія показань</a>
 
 
 
