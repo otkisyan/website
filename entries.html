@@ -13,22 +13,24 @@
     <title>Попередні показання</title>
 </head>
 
-<body onload = "getType(); buildTable()">
+<body onload = "checkLanguage(); changeLanguages(); getType(); buildTable()">
+
     <div class = "wrapper">
     <a onclick = "history.back()">
     <img src="images/arrow.svg" class="arrow">
     </a>
-    <p class="title" id="Title">Історія показань</p>
+    <p class="title" id="title">Історія показань</p>
+    <p class="subtitle" id="subtitle"></p>
     <div class = "previousEntries">
 
     <table class = "entriesTable" id = "entriesTable">
 
         <tr class = "tableValues">
-            <td class = "value value-data">Дата</td>
-            <td class = "value value-preventry">Попередні показання</td>
-            <td class = "value value-newentry">Нові <p>показання</p></td>
-            <td class = "value value-rate">Тариф</td>
-            <td class = "value value-sum">Сума до сплати</td>
+            <td class = "value value-data" id = "date">Дата</td>
+            <td class = "value value-preventry" id = "previousEntry">Попередні показання</td>
+            <td class = "value value-newentry" id = "newEntry">Нові <p>показання</p></td>
+            <td class = "value value-rate" id = "currentRate">Тариф</td>
+            <td class = "value value-sum" id = "sumText">Сума до сплати</td>
         </tr>
 
         <tbody class = "tableData" id = "tableData">
@@ -37,14 +39,17 @@
 
     </table>
 
-    
     </div>
+
     <img src="images/search.png" class="errorImage" id = "errorImage">
     <p class = "error" id = "error">Ви ще не маєте записів в історії показань!</p>
+
     </div>
 
 
     <script src = "scripts/entries.js"></script>
     <script src = "scripts/table.js"></script>
+    <script src = "scripts/translation/entriesTranslation.js"></script>
+
 </body>
 </html>

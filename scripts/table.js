@@ -1,14 +1,18 @@
 function getType(){
 
     if(window.location.hash){
-        if(window.location.hash === "#water"){
+        if(window.location.hash === "#water#ua" || window.location.hash === "#water#ru" || window.location.hash === "#water#en"){
+            document.getElementById("subtitle").innerHTML = "Вода"
             return "Water";
             
         }
-        if(window.location.hash === "#gas"){
+        if(window.location.hash === "#gas#ua" || window.location.hash === "#gas#ru" || window.location.hash === "#gas#en"){
+            document.getElementById("subtitle").innerHTML = "Газ"
             return "Gas";
         }
-        if(window.location.hash === "#electric"){
+        if(window.location.hash === "#electric#ua" || window.location.hash === "#electric#ru" || window.location.hash === "#electric#en"){
+            document.getElementById("subtitle").innerHTML = "Електроенергія"
+            document.getElementById("subtitle").style.width = "170px"
             return "Electric";
         }
 }
@@ -38,8 +42,6 @@ function buildTable(){
         </tr>`
         Table.innerHTML += row;
         
-        
-         
         
     }
 }

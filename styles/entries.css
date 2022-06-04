@@ -68,6 +68,30 @@ table {
     color: #272727;
   }
 
+  .subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+  
+    background-color: rgba(25, 123, 221, 0.7);
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+  }
+
+
   .arrow{
     position: relative;
     left: 22px;
