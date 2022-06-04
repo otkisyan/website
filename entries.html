@@ -15,15 +15,20 @@
 
 <body onload = "getType(); buildTable()">
     <div class = "wrapper">
+    <a onclick = "history.back()">
+    <img src="images/arrow.svg" class="arrow">
+    </a>
+    <p class="title" id="Title">Історія показань</p>
     <div class = "previousEntries">
-    <table class = "entriesTable">
+
+    <table class = "entriesTable" id = "entriesTable">
 
         <tr class = "tableValues">
-            <td class = "value">Дата</td>
-            <td class = "value">Попередні показання</td>
-            <td class = "value">Нові показання</td>
-            <td class = "value">Тариф</td>
-            <td class = "value">Сума до сплати</td>
+            <td class = "value value-data">Дата</td>
+            <td class = "value value-preventry">Попередні показання</td>
+            <td class = "value value-newentry">Нові <p>показання</p></td>
+            <td class = "value value-rate">Тариф</td>
+            <td class = "value value-sum">Сума до сплати</td>
         </tr>
 
         <tbody class = "tableData" id = "tableData">
@@ -31,7 +36,11 @@
         </tbody>
 
     </table>
+
+    
     </div>
+    <img src="images/search.png" class="errorImage" id = "errorImage">
+    <p class = "error" id = "error">Ви ще не маєте записів в історії показань!</p>
     </div>
 
 

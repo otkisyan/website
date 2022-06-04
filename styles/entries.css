@@ -56,26 +56,117 @@ table {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .title{
+
+    margin-top: 85px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #272727;
+  }
+
+  .arrow{
+    position: relative;
+    left: 22px;
+    top: 108.5px;
+    cursor: pointer;
+  }
+  
   
   .previousEntries{
-    margin-top: 85px;
+    margin-top: 40px;
     display: flex; 
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .value{
-    padding: 0px 20px 0px 20px;
+  .entriesTable{
+    display: block;
+  }
+  .errorImage{
+    visibility: hidden;
+    margin-bottom: 30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tableValues{
+    color: white;
+    background-color: rgba(25, 123, 221, 0.7);
+    
+    
+  }
+
+  .error{
+    margin-top: 20px;
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
     font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+     
+   }
+
+  .value{
+    padding: 5px 20px 10px 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
       
   }
 
-  td, th{
-    border: 1px solid #dddddd;
+  .tableData{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
   }
+
+  .value-data{
+    width: 10%;
+  }
+
+  .value-preventry{
+    width: 10%;
+  }
+
+  .value-newentry{
+    width: 10%;
+  }
+
+  .value-rate{
+    width: 10%;
+  }
+
+  .value-sum{
+    width: 10%;
+  }
+
+  td, th{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td{
+    height: 50px;
+    vertical-align: middle;
+  }
+
+
  

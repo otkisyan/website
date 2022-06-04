@@ -77,8 +77,6 @@ table {
 	cursor: pointer;
 }
 
-
-
 .previousEntry{
 	
 	margin-top: 50px;
@@ -256,6 +254,7 @@ input[type=number] {
 
 	display: block;
 	margin-top: 100px;
+	margin-bottom: 40px;
 
 
 	font-family: 'Inter';
