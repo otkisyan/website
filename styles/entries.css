@@ -191,7 +191,6 @@ table {
   }
 
   .previousEntries{
-  
     margin-top: 40px;
     display: flex; 
     align-items: center;
@@ -206,6 +205,9 @@ table {
   @media (max-width: 560px) {
     .entriesTable{
       width: 100%;
+    }
+    .value{
+      font-size: 10px;
     }
   }
   
