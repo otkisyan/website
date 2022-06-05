@@ -21,6 +21,8 @@ function getType(){
             document.getElementById("subtitle").style.display = "none"
             document.getElementById("nonChoosed").style.display = "block"
             document.getElementById("buttons").style.display = "block"
+            document.getElementById("arrow").style.visibility = "hidden"
+            
             return 0;
 
 
