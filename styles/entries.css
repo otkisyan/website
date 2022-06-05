@@ -99,18 +99,6 @@ table {
     cursor: pointer;
   }
   
-  
-  .previousEntries{
-    margin-top: 40px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .entriesTable{
-    display: block;
-  }
   .errorImage{
     visibility: hidden;
     margin-top: 30px;
@@ -122,11 +110,11 @@ table {
     margin-left: auto;
   }
 
+
   .tableValues{
+    text-align: center;
     color: white;
     background-color: rgba(25, 123, 221, 0.7);
-    
-    
   }
 
   .error{
@@ -145,7 +133,7 @@ table {
    }
 
   .value{
-    padding: 5px 20px 10px 20px;
+    padding: auto;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -155,12 +143,12 @@ table {
   }
 
   .tableData{
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
+    
   }
 
   .value-data{
@@ -182,16 +170,42 @@ table {
   .value-sum{
     width: 10%;
   }
+  
 
   td, th{
     text-align: center;
     border-bottom: 1px solid #ddd;
+  
   }
 
   td{
     height: 50px;
     vertical-align: middle;
   }
+  
+  .entriesTable{
+    display: block;
+    width: 80%;
+    overflow: scroll;
+    
+  }
+
+  .previousEntries{
+  
+    margin-top: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 
 
- 
+  @media (max-width: 560px) {
+    .entriesTable{
+      width: 100%;
+    }
+  }
+  
