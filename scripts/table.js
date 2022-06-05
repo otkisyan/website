@@ -25,8 +25,10 @@ function buildTable(){
     let Entries = JSON.parse(localStorage.getItem('Entries' + type));
 
     if (Entries[0].previousEntries === null){
-        document.getElementById("error").style.visibility = "visible"
         document.getElementById("entriesTable").style.display = "none"
+        document.getElementById("previousEntries").style.display = "none"
+
+        document.getElementById("error").style.visibility = "visible"
         document.getElementById("errorImage").style.visibility = "visible"
 
     }

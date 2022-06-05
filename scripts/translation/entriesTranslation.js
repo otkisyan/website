@@ -24,6 +24,7 @@ var language = {
         newEntry: "Нові показання",
         rate: "Тариф",
         sumText: "Сума до сплати",
+        error: "Ви ще не маєте записів в історії показань!"
 
     },
 
@@ -37,6 +38,7 @@ var language = {
         newEntry: "Новые показания",
         rate: "Тариф",
         sumText: "Сумма к оплате",
+        error: "У вас еще нет записей в истории показаний!"
         
     },
 
@@ -50,6 +52,7 @@ var language = {
          newEntry: "New readings",
          rate: "Rate",
          sumText: "Amount to be paid",
+         error: "You don't have a record in your readings history yet!"
         
     }
 };
@@ -66,6 +69,7 @@ if(window.location.hash){
         newEntry.textContent = language.ua.newEntry;
         currentRate.textContent = language.ua.rate;
         sumText.textContent = language.ua.sumText;
+        error.textContent = language.ua.error;
         
     }
 
@@ -88,6 +92,7 @@ if(window.location.hash){
         newEntry.textContent = language.ru.newEntry;
         currentRate.textContent = language.ru.rate;
         sumText.textContent = language.ru.sumText;
+        error.textContent = language.ru.error;
       
     }
 
@@ -111,6 +116,7 @@ if(window.location.hash){
         newEntry.textContent = language.en.newEntry;
         currentRate.textContent = language.en.rate;
         sumText.textContent = language.en.sumText;
+        error.textContent = language.en.error;
       
 
     }
@@ -122,7 +128,7 @@ if(window.location.hash){
         subtitle.textContent = language.en.gas;
     }
     if(window.location.hash === "#electric#en"){
-        ubtitle.textContent = language.en.electric;
+        subtitle.textContent = language.en.electric;
     }
 
 }

@@ -5,7 +5,7 @@
         localStorage.setItem('language', 'ua');
     }
 
-    if(!window.location.hazsh){ 
+    if(!window.location.hash){ 
     window.location.hash = "#" + localStorage.getItem('language');
     //window.location.reload(true); 
    
@@ -25,7 +25,8 @@ var language = {
         newEntry: "Нові показання",
         rate: "Тариф",
         sumText: "Сума до сплати",
-        sumButton: "ОБЧИСЛИТИ"
+        sumButton: "ОБЧИСЛИТИ",
+        history: "Історія показань",
 
     },
 
@@ -40,7 +41,8 @@ var language = {
         newEntry: "Новые показания",
         rate: "Тариф",
         sumText: "Сумма к оплате",
-        sumButton: "РАССЧИТАТЬ"
+        sumButton: "РАССЧИТАТЬ",
+        history: "История показаний",
         
     },
 
@@ -55,7 +57,8 @@ var language = {
          newEntry: "New readings",
          rate: "Rate",
          sumText: "Amount to be paid",
-         sumButton: "CALCULATE"
+         sumButton: "CALCULATE",
+         history: "History of readings",
     }
 };
 
@@ -75,6 +78,7 @@ if(window.location.hash){
         currentRate.textContent = language.ua.rate;
         sumText.textContent = language.ua.sumText;
         sumButton.setAttribute("value", language.ua.sumButton);
+        previousEntries.textContent = language.ua.history;
 
     }
 
@@ -91,7 +95,7 @@ if(window.location.hash){
         currentRate.textContent = language.ru.rate;
         sumText.textContent = language.ru.sumText;
         sumButton.setAttribute("value", language.ru.sumButton);
-
+        previousEntries.textContent = language.ru.history;
     }
 
    
@@ -107,6 +111,7 @@ if(window.location.hash){
         currentRate.textContent = language.en.rate;
         sumText.textContent = language.en.sumText;
         sumButton.setAttribute("value", language.en.sumButton);
+        previousEntries.textContent = language.en.history;
 
     }
 

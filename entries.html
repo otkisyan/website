@@ -13,7 +13,7 @@
     <title>Попередні показання</title>
 </head>
 
-<body onload = "checkLanguage(); changeLanguages(); getType(); buildTable()">
+<body onload = "checkLanguage(); getType(); buildTable(); changeLanguages();">
 
     <div class = "wrapper">
     <a onclick = "history.back()">
@@ -21,14 +21,14 @@
     </a>
     <p class="title" id="title">Історія показань</p>
     <p class="subtitle" id="subtitle"></p>
-    <div class = "previousEntries">
+    <div class = "previousEntries" id = "previousEntries">
 
     <table class = "entriesTable" id = "entriesTable">
 
         <tr class = "tableValues">
             <td class = "value value-data" id = "date">Дата</td>
             <td class = "value value-preventry" id = "previousEntry">Попередні показання</td>
-            <td class = "value value-newentry" id = "newEntry">Нові <p>показання</p></td>
+            <td class = "value value-newentry" id = "newEntry">Нові показання</td>
             <td class = "value value-rate" id = "currentRate">Тариф</td>
             <td class = "value value-sum" id = "sumText">Сума до сплати</td>
         </tr>
