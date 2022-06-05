@@ -15,12 +15,27 @@ function getType(){
             document.getElementById("subtitle").style.width = "170px"
             return "Electric";
         }
+        if(window.location.hash === "" || window.location.hash === "#ua" || window.location.hash === "#ru" || window.location.hash === "#en"){
+            document.getElementById("entriesTable").style.display = "none"
+            document.getElementById("previousEntries").style.display = "none"
+            document.getElementById("subtitle").style.display = "none"
+            document.getElementById("nonChoosed").style.display = "block"
+            document.getElementById("buttons").style.display = "block"
+            return 0;
+
+
+        }
 }
 }
 
 function buildTable(){
     
     let type = getType();
+    
+    if(type === 0){
+        return 0;
+    }
+
     let Table = document.getElementById("tableData")
     let Entries = JSON.parse(localStorage.getItem('Entries' + type));
 

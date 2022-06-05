@@ -24,7 +24,8 @@ var language = {
         newEntry: "Нові показання",
         rate: "Тариф",
         sumText: "Сума до сплати",
-        error: "Ви ще не маєте записів в історії показань!"
+        error: "Ви ще не маєте записів в історії показань!",
+        choose: "Оберіть необхідну комунальну послугу",
 
     },
 
@@ -38,7 +39,8 @@ var language = {
         newEntry: "Новые показания",
         rate: "Тариф",
         sumText: "Сумма к оплате",
-        error: "У вас еще нет записей в истории показаний!"
+        error: "У вас еще нет записей в истории показаний!",
+        choose: "Выберите необходимую коммунальную услугу",
         
     },
 
@@ -52,7 +54,9 @@ var language = {
          newEntry: "New readings",
          rate: "Rate",
          sumText: "Amount to be paid",
-         error: "You don't have a record in your readings history yet!"
+         error: "You don't have a record in your readings history yet!",
+         choose: "Select the desired communal service",
+         
         
     }
 };
@@ -70,7 +74,17 @@ if(window.location.hash){
         currentRate.textContent = language.ua.rate;
         sumText.textContent = language.ua.sumText;
         error.textContent = language.ua.error;
+
         
+        
+    }
+
+    if(window.location.hash === "#ua"){
+        nonChoosed.textContent = language.ua.choose;
+        title.textContent = language.ua.title;
+        water.textContent = language.ua.water;
+        gas.textContent = language.ua.gas;
+        electricity.textContent = language.ua.electric;
     }
 
     if(window.location.hash === "#water#ua"){
@@ -93,8 +107,19 @@ if(window.location.hash){
         currentRate.textContent = language.ru.rate;
         sumText.textContent = language.ru.sumText;
         error.textContent = language.ru.error;
+
+        
       
     }
+
+    if(window.location.hash === "#ru"){
+        nonChoosed.textContent = language.ru.choose;
+        title.textContent = language.ru.title;
+        water.textContent = language.ru.water;
+        gas.textContent = language.ru.gas;
+        electricity.textContent = language.ru.electric;
+    }
+
 
     if(window.location.hash === "#water#ru"){
         subtitle.textContent = language.ru.water;
@@ -117,12 +142,25 @@ if(window.location.hash){
         currentRate.textContent = language.en.rate;
         sumText.textContent = language.en.sumText;
         error.textContent = language.en.error;
+
+        water.textContent = language.en.water;
+        gas.textContent = language.en.gas;
+        electricity.textContent = language.en.electric;
       
 
     }
 
+    if(window.location.hash === "#en"){
+        nonChoosed.textContent = language.en.choose;
+        title.textContent = language.en.title;
+        water.textContent = language.en.water;
+        gas.textContent = language.en.gas;
+        electricity.textContent = language.en.electric;
+    }
+
     if(window.location.hash === "#water#en"){
         subtitle.textContent = language.en.water;
+       
     }
     if(window.location.hash === "#gas#en"){
         subtitle.textContent = language.en.gas;
