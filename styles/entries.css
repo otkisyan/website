@@ -271,3 +271,15 @@ table {
     }
   }
   
+  @media (max-width: 345px) {
+    .entriesTable{
+      width: 100%;
+    }
+    .value{
+      font-size: 8px;
+    }
+    .tableData{
+      font-size: 9px;
+    }
+  }
+  
