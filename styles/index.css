@@ -298,6 +298,24 @@ a{
 
 
 
+@media (max-width: 375px) {
+.avatar{
+	width: 179px;
+  	height: 140px;
+
+}
+.title{
+	font-size: 19px;
+}
+.subtitle{
+	font-size: 11px;
+}
+ button{
+	width: 180px;
+	height: 50px;
+ }
+}
+
 
 @media (max-width: 590px) {
 
@@ -446,6 +464,7 @@ a{
 	.closeButton{
 		margin-top: -27px;
 	}
+
 }
 
 @media (max-width: 356px) {
