@@ -274,5 +274,29 @@ input[type=number] {
 	margin-left: 30px;
 	margin-top: 20px;
 }
+
+
 	
+}
+
+@media (max-width: 375px) {
+.previousEntry{
+	margin-top: 40px;
+	font-size: 14px;
+}
+.newEntry{
+	font-size: 14px;
+}
+.rate{
+	font-size: 14px;
+}
+
+.sumText{
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+.previousEntries{
+	margin-top: 40px;
+}
 }
