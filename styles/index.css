@@ -290,7 +290,21 @@ a{
 }
 
 
+@media (max-width: 375px) {
 
+	.avatar{
+		width: 179px;
+		  height: 140px;
+	
+	}
+	.title{
+		font-size: 19px;
+	}
+	.subtitle{
+		font-size: 11px;
+	}
+	
+	}
 
 
 @media (max-width: 590px) {
