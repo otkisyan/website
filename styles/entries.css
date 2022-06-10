@@ -336,9 +336,11 @@ td {
 
 @keyframes move {
   0% {
+    opacity: 0;
     margin-top: -40px;
   }
   100% {
+    opacity: 1;
     margin-top: 0px;
   }
 }
