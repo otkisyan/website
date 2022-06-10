@@ -58,7 +58,7 @@ function buildTable() {
 
   let Table = document.getElementById("tableData");
   let Entries = JSON.parse(localStorage.getItem("Entries" + type));
-
+  document.getElementById("entriesTable").classList.toggle("active");
   if (Entries[0].previousEntries === null) {
     document.getElementById("entriesTable").style.display = "none";
     document.getElementById("previousEntries").style.display = "none";

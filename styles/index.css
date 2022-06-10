@@ -243,6 +243,9 @@ button:hover {
 
 .informationForUser {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 200px;
   margin-top: 10px;
   margin-bottom: 30px;
 
