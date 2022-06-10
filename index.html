@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id = "mainPageTitle">Калькулятор комунальних послуг</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title id="mainPageTitle">Калькулятор комунальних послуг</title>
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<body onload="checkLanguage(); changeLanguages();">
-  <div class="wrapper">
+  <body onload="checkLanguage(); changeLanguages();">
+    <div class="wrapper">
+      <img src="images/avatar.svg" class="avatar" />
+      <h1 class="title" id="title">Калькулятор комунальних послуг</h1>
+      <h3 class="subtitle" id="subtitle">Натисніть на кнопку щоб пійти далі</h3>
 
-    <img src="images/avatar.svg" class="avatar">
-    <h1 class="title" id="title">Калькулятор комунальних послуг</h1>
-    <h3 class="subtitle" id="subtitle">Натисніть на кнопку щоб пійти далі</h3>
-
-    <div class=buttons>
-      <a onclick="redirect('water.html');"><button class="buttonWater" id="water">Вода</button></a>
-      <a onclick="redirect('gas.html');"><button class="buttonGas" id="gas">Газ</button></a>
-      <a onclick="redirect('electric.html');"><button class="buttonElectric"
-          id="electricity">Електроенергія</button></a>
-    </div>
-
-    <div class="preferences">
-
-      <p class="changeLanguage" id="changeLanguage">Змінити мову</p>
-
-      <div class="languages">
-        <a onclick="getLanguage('ua'); reloadPage('ua');"><img src="images/languages/!svg/ukraine.svg" class="language"
-            id="ukrainian" alt = "Українська"></a>
-        <a onclick="getLanguage('ru'); reloadPage('ru');"><img src="images/languages/!svg/russia.svg" class="language"
-            id="russian" alt = "Русский"></a>
-        <a onclick="getLanguage('en'); reloadPage('en');"><img src="images/languages/!svg/united-kingdom.svg"
-            class="language" id="english" alt = "English"></a>
+      <div class="buttons">
+        <a onclick="redirect('water.html');"
+          ><button class="buttonWater" id="water">Вода</button></a
+        >
+        <a onclick="redirect('gas.html');"
+          ><button class="buttonGas" id="gas">Газ</button></a
+        >
+        <a onclick="redirect('electric.html');"
+          ><button class="buttonElectric" id="electricity">
+            Електроенергія
+          </button></a
+        >
       </div>
 
+      <div class="preferences">
+        <p class="changeLanguage" id="changeLanguage">Змінити мову</p>
 
-      <a class="informationForUser" id="info" onclick="enablePop()">Інформація для користувача</a>
+        <div class="languages">
+          <a onclick="getLanguage('ua'); reloadPags('ua');"
+            ><img
+              src="images/languages/!svg/ukraine.svg"
+              class="language"
+              id="ukrainian"
+              alt="Українська"
+          /></a>
+          <a onclick="getLanguage('ru'); reloadPage('ru');"
+            ><img
+              src="images/languages/!svg/russia.svg"
+              class="language"
+              id="russian"
+              alt="Русский"
+          /></a>
+          <a onclick="getLanguage('en'); reloadPage('en');"
+            ><img
+              src="images/languages/!svg/united-kingdom.svg"
+              class="language"
+              id="english"
+              alt="English"
+          /></a>
+        </div>
 
-      <div class="background" id="background">
-        <div class="content" id="content">
-          <img src="images/info.svg" class="infoImage">
-          <p class="contentTitle" id="contentTitle">Привіт!</p>
-          <p class="textContent" id="textContent">
-            Дане ПЗ створено для користувачів, аби полегшити роботу з показниками комунальних послуг та замінити
-            розрахункову книжку. Щоб почати користуватися даною програмою варто просто натиснути кнопку з вибраною
-            комунальною послугою (вода, газ, електроенергія), занести до визначених полів показники з лічильника та
-            тариф, зазначений компанією постачальником, та натиснути кнопку 'Обчислити', визначене поле виведе ціну, яку
-            ви повинні будете сплатити.
+        <a class="informationForUser" id="info" onclick="enablePop()"
+          >Інформація для користувача</a
+        >
 
-          </p>
-          <img src="images/close-button.svg" class="closeButton" id="closeButton" onclick="enablePop()">
+        <div class="background" id="background">
+          <div class="content" id="content">
+            <img src="images/info.svg" class="infoImage" />
+            <p class="contentTitle" id="contentTitle">Пр ивіт!</p>
+            <p class="textContent" id="textContent">
+              Дане ПЗ створено для користувачів, аби полегшити роботу з
+              показниками комунальних послуг та замінити розрахункову книжку.
+              Щоб почати користуватися даною програмою варто просто натиснути
+              кнопку з вибраною комунальною послугою (вода, газ,
+              електроенергія), занести до визначених полів показники з
+              лічильника та тариф, зазначений компанією постачальником, та
+              натиснути кнопку 'Обчислити', визначене поле виведе ціну, яку ви
+              повинні будете сплатити.
+            </p>
+            <img
+              src="images/close-button.svg"
+              class="closeButton"
+              id="closeButton"
+              onclick="enablePop()"
+            />
+          </div>
         </div>
       </div>
-
     </div>
 
-
-  </div>
-
-
-
-  <script src="scripts/translation/homeTranslation.js"></script>
-  <script src="scripts/index.js"></script>
-</body>
-
+    <script src="scripts/translation/homeTranslation.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>

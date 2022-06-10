@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles/entries.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/entries.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Попередні показання</title>
-</head>
+  </head>
 
-<body onload = "checkLanguage(); getType(); buildTable(); changeLanguages();">
+  <body onload="checkLanguage(); getType(); buildTable(); changeLanguages();">
+    <div class="wrapper">
+      <a onclick="history.back()">
+        <img src="images/arrow.svg" class="arrow" id="arrow" />
+      </a>
+      <p class="title" id="title">Історія показань</p>
+      <p class="subtitle" id="subtitle"></p>
+      <div class="previousEntries" id="previousEntries">
+        <table class="entriesTable" id="entriesTable">
+          <tr class="tableValues">
+            <td class="value value-data" id="date">Дата</td>
+            <td class="value value-preventry" id="previousEntry">
+              Попередні показання
+            </td>
+            <td class="value value-newentry" id="newEntry">Нові показання</td>
+            <td class="value value-rate" id="currentRate">Тариф</td>
+            <td class="value value-sum" id="sumText">Сума></td>
+          </tr>
 
-    <div class = "wrapper">
-    <a onclick = "history.back()">
-    <img src="images/arrow.svg" class="arrow" id = "arrow">
-    </a>
-    <p class="title" id="title">Історія показань</p>
-    <p class="subtitle" id="subtitle"></p>
-    <div class = "previousEntries" id = "previousEntries">
-
-    <table class = "entriesTable" id = "entriesTable">
-
-        <tr class = "tableValues">
-            <td class = "value value-data" id = "date">Дата</td>
-            <td class = "value value-preventry" id = "previousEntry">Попередні показання</td>
-            <td class = "value value-newentry" id = "newEntry">Нові показання</td>
-            <td class = "value value-rate" id = "currentRate">Тариф</td>
-            <td class = "value value-sum" id = "sumText">Сума></td>
-        </tr>
-
-        <tbody class = "tableData" id = "tableData">
-
-        </tbody>
-
-    </table>
-
-    </div>
-
-
-    <img src="images/search.png" class="errorImage" id = "errorImage">
-    <p class = "error" id = "error">Ви ще не маєте записів в історії показань!</p>
-    <p class = "nonChoosed" id = "nonChoosed">Оберіть необіхдну комунальну послугу</p>
-
-    <div class="buttons" id = "buttons">
-        <a href="water.html"><button class="buttonWater" id="water">Вода</button></a>
-        <a href="gas.html"><button class="buttonGas" id="gas">Газ</button></a>
-        <a href ="electric.html"><button class="buttonElectric" id="electricity">Електроенергія</button></a>
+          <tbody class="tableData" id="tableData"></tbody>
+        </table>
       </div>
 
+      <img src="images/search.png" class="errorImage" id="errorImage" />
+      <p class="error" id="error">Ви ще не маєте записів в історії показань!</p>
+      <p class="nonChoosed" id="nonChoosed">
+        Оберіть необіхдну комунальну послугу
+      </p>
+
+      <div class="buttons" id="buttons">
+        <a href="water.html"
+          ><button class="buttonWater" id="water">Вода</button></a
+        >
+        <a href="gas.html"><button class="buttonGas" id="gas">Газ</button></a>
+        <a href="electric.html"
+          ><button class="buttonElectric" id="electricity">
+            Електроенергія
+          </button></a
+        >
+      </div>
     </div>
 
-
-    <script src = "scripts/entries.js"></script>
-    <script src = "scripts/table.js"></script>
-    <script src = "scripts/translation/entriesTranslation.js"></script>
-
-</body>
+    <script src="scripts/entries.js"></script>
+    <script src="scripts/table.js"></script>
+    <script src="scripts/translation/entriesTranslation.js"></script>
+  </body>
 </html>
