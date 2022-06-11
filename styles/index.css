@@ -320,7 +320,7 @@ button:hover {
   height: 40px;
 }
 
-.infoimage.active {
+.infoImage.active {
   animation: jelly 1s;
 }
 @keyframes jelly {
