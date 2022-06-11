@@ -321,7 +321,7 @@ a {
 }
 
 .infoImage.active {
-  animation: jelly 1s;
+  animation: jelly 1.5s;
 }
 @keyframes jelly {
   0% {
