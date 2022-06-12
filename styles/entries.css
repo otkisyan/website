@@ -362,7 +362,7 @@ td {
 }
 
 .entriesTable.active {
-  animation: move 1.5s;
+  animation: move 1s;
 }
 
 @keyframes move {
