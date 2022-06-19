@@ -14,7 +14,7 @@ function createEntries(type) {
         sum: null,
       },
     ];
-
+ 
     localStorage.setItem("Entries" + type, JSON.stringify(Entries));
   }
 

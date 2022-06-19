@@ -346,7 +346,7 @@ td {
 .entriesTable {
   display: none;
   width: 80%;
-  overflow: scroll;
+  overflow: auto;
   transition: all 1s;
 }
 
@@ -367,14 +367,14 @@ td {
 
 @keyframes move {
   0% {
+    transform: translatez(0);
     opacity: 0;
     margin-top: -40px;
-    transform: translatez(0);
   }
   100% {
+    transform: translatez(0);
     opacity: 1;
     margin-top: 0px;
-    transform: translatez(0);
   }
 }
 
